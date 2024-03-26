@@ -45,9 +45,8 @@ function App() {
     <div className="App">
       <Navbar bg="light" data-bs-theme="light">
       <Container>
-          <Navbar.Brand href="#home">Shop J</Navbar.Brand>
+          <Navbar.Brand onClick={()=>{navigate('/')}}>Shop J</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>{navigate('/')}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/detail/0')}}>Detail</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/cart')}}>Cart</Nav.Link>
           </Nav>
